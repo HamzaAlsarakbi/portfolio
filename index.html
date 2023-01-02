@@ -1,101 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Hamza's Portfolio - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/img/icon.png">
-  <link rel="stylesheet" href="assets/css/scrollbar.css">
-  <link rel="stylesheet" href="assets/css/scheme.css">
-  <link rel="stylesheet" href="assets/css/lightTheme.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/palette.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <title>Hamza Alsarakbi</title>
 </head>
+<body onload="init()">
+  <div class="root">
+    <!-- <div class="navbar">
+      <a class="navbar-item link-button" id="contact" href="#s4">Contact</a>
+      <a class="navbar-item link-button" id="contact" href="#s3">Experience</a>
+      <a class="navbar-item link-button" id="expertise" href="#s2">Expertise</a>
+      <a class="navbar-item link-button" id="home" href="#s1">Home</a>
+    </div> -->
+    <!-- <div class="sidebar">
+      <div class="sidebar-section" id="sidebar-top">
+        <a class="sidebar-item" id="github" href="www.github.com/HamzaAlsarakbi">
+          <img class="sidebar-icon" id="logo" src="assets/img/logo/logo.png">
+        </a>
+      </div>
+      <div class="sidebar-section" id="sidebar-bottom">
+        <div class="sidebar-item line"></div>
+        <a class="sidebar-item" id="github" href="www.github.com/HamzaAlsarakbi">
+          <img class="sidebar-icon" id="github" src="assets/img/github.png">
+        </a>
+        <a class="sidebar-item" id="linkedin" href="https://www.linkedin.com/in/hamza-alsarakbi-006586b4/">
+          <img class="sidebar-icon" id="github" src="assets/img/linkedin.png">
+        </a>
+        <a class="sidebar-item" id="blog"></a>
+      </div>
+    </div> -->
+    <div class="slides">
 
-<body>
 
-  <!-- Navigation Bar -->
-  <nav class="bar">
-    <nav class="group" id="left">
-    </nav>
-    <nav class="group" id="center">
-      <a class="element" id="programming" href="#glance-programming">Programming</a>
-      <a class="element" id="3d-design" href="#glance-design">3D Design</a>
-      <a class="element" id="contact" href="#contact-me">Contact Me</a>
-    </nav>
-    <nav class="group" id="right">
-    </nav>
-  </nav>
+        <div class="slide" id="s1">
+          <div class="slide-content" id="s1">
+            <div class="slide-section" id="slide-text">
+              <p class="pre-header animatable"></p>
+              <h1 class="hidden" id="name">Hamza Alsarakbi.</h1>
+              <p class="indented hidden" id="s1-p1">Software developer and 3D designer based in Ottawa.</p>
+              <p class="indented hidden" id="s1-p2">Currently studying computer science at Carleton University.</p>
+              <p class="indented hidden" id="s1-p3">Working on a password manager that stores your data locally, putting your privacy first.</p>
+              <p class="indented hidden" id="s1-p4">Working as a Software Developer for Billet Precision.</p>
+              <p class="indented hidden" id="s1-p5">Interested in AI, design, open-source and automation.</p>
+            </div>
+            <div class="slide-section" id="slide-media">
+              <img class="iconography hidden" id="ball" src="assets/img/ball/ball_eevee.png" alt="design">
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+          <div class="slide" id="s2">
+            <div class="slide-content" id="s2">
+              <div class="slide-section" id="slide-text">
+                <h1>Expertise</h1>
+                <div class="box-collection">
+                  <div class="box" id="software-development">
+                    <h2 class="box-header">Software Development</h2>
+                    <div class="box-body">
+                      <p>Experienced in:</p>
+                      <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box" id="project-management">
+                    <h2 class="box-header">Project Management</h2>
+                    <div class="box-body">
+                      <p>Managed 6+ personal, work and competition projects while meeting crucial deadlines, most of which Are on GitHub.</p>
+                    </div>
+                  </div>
+                  <div class="box" id="data-structures">
+                    <h2 class="box-header">Data Structures</h2>
+                    <div class="box-body">
+                      <p>Understand many complex data structures, such as:</p>
+                      <ul>
+                        <li>Red-Black trees</li>
+                        <li>2-3-4 trees</li>
+                        <li>Scapegoat trees</li>
+                        <li>Heaps</li>
+                        <li>Treaps</li>
+                        <li>BST</li>
+                      </ul>
+                      <p>And various types of array and node-based lists.</p>
+                    </div>
+                  </div>
+              <div class="box" id="algorithms">
+                <h2 class="box-header">Algorithms</h2>
+                <div class="box-body">
+                  <p>Implemented many complex algorithms, such as:</p>
+                  <ul>
+                    <li>Jarvis March</li>
+                    <li>Graham's Scan</li>
+                    <li>Naïve Algorithm</li>
+                    <li>Bently-Ottman Algorithm</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box" id="design">
+                <h2 class="box-header">Design</h2>
+                <div class="box-body">
+                  <p>Passionate about:</p>
+                  <ul>
+                    <li>3D</li>
+                    <li>2D</li>
+                    <li>Web design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide" id="s3">
+        <div class="slide-content" id="s3">
+          <div class="slide-section" id="slide-text">
+            <h1>Experience</h1>
+            <div class="timeline">
+              <!-- Segment -->
+              <div class="timeline-segment" id="timeline-1">
+                <div class="timeline-graph" id="timeline-1">
+                  <div class="vertex hidden" id="timeline-1"></div>
+                  <div class="vertex-edge hidden" id="timeline-1"></div>
+                </div>
+                <div class="description hidden" id="timeline-1">
+                  <div class="header" id="timeline-1">
+                    <h4 id="timeline-1">Software Developer and CNC Programmer</h4>
+                    <p class="timestamp" id="timeline-1">Part-Time | Aug 2022 - Present</p>
+                  </div>
+                  <p class="location" id="timeline-1">Billet Precision, Ottawa, ON</p>
+                  <ul>
+                    <li class="timeline-1 hidden" id="list-1">Write critical software used internally by QA, management and other departments</li>
+                    <li class="timeline-1 hidden" id="list-2">Write documentation for said software</li>
+                    <li class="timeline-1 hidden" id="list-3">Adhere to MVC design pattern and OOP model</li>
+                    <li class="timeline-1 hidden" id="list-4">Use Git to track changes</li>
+                    <li class="timeline-1 hidden" id="list-5">Communicate projects roadmap through Trello</li>
+                    <li class="timeline-1 hidden" id="list-6">Log program events for traceback</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Segment -->
+              <div class="timeline-segment" id="timeline-2">
+                <div class="timeline-graph" id="timeline-2">
+                  <div class="vertex hidden" id="timeline-2"></div>
+                  <div class="vertex-edge hidden" id="timeline-2"></div>
+                </div>
+                <div class="description hidden" id="timeline-2">
+                  <div class="header" id="timeline-2">
+                    <h4 class="position" id="timeline-2">Teacher Assistant - COMP 1805</h4>
+                    <p class="timestamp" id="timeline-2">Contract Part-Time | Sep 2022 - Dec 2022</p>
+                  </div>
+                  <p class="location" id="timeline-2">Carleton University, Ottawa, ON</p>
+                  <ul>
+                  <li class="timeline-2 hidden" id="list-1">Conduct 3 hour student hours weekly to help students with course material</li>
+                  <li class="timeline-2 hidden" id="list-2">Mark and provide feedback on students' assignments, tutorials, drills, and practice sets</li>
+                  <li class="timeline-2 hidden" id="list-3">Monitor discussion forum and help students with any question</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-segment" id="timeline-3">
+                <div class="timeline-graph" id="timeline-3">
+                  <div class="vertex hidden" id="timeline-3"></div>
+                </div>
+                <div class="description hidden" id="timeline-3">
+                  <div class="header" id="timeline-3">
+                    <h4 id="timeline-3">Software Developer</h4>
+                    <p class="timestamp" id="timeline-3">Internship | Sep 2019 - Jan 2020</p>
+                  </div>
+                  <p class="location" id="timeline-3">NorthStar Utilities Solutions, Ottawa, ON</p>
+                  <ul id="timeline-3">
+                    <li class="timeline-3 hidden" id="list-1">Learned Docker and containerizing company software</li>
+                    <li class="timeline-3 hidden" id="list-2">Learned JavaScript, web development and design</li>
+                    <li class="timeline-3 hidden" id="list-3">Created media-based documentation for customers and onboarding employees</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-  <!-- Cover -->
-  <div class="cover">
-    <video class="background" src="assets/video/intro/intro.mp4" autoplay muted></video>
-    <div class="header-container">
-      <p class="website-header header" id="hello">Hello There!</p>
-      <p class="sub-header" id="hello">I'm Hamza Alsarakbi</p>
-    </div>
-    <!-- Small Paragraph about me -->
+          </div>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide" id="s4">
+        <div class="slide-content" id="s4">
+          <div class="slide-section" id="slide-text">
+            <h1>Contact</h1>
+            
 
 
-    <div class="container" id="me">
-      <p class="container-header">About</p>
-      <div class="container-paragraph">
-        <p>I was born in Damascus, Syria and moved to Canada in 2017.</p>
-        <p>I design websites, write programs, create 3D designs and animate.</p>
-        <p>Have a look around my portfolio. I will update it as I create more things.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  <div class="glance" id="glance-programming">
-    <div class="header-container">
-      <p class="header">My Work at a Glance: Programming</p>
-      <p class="sub-header">PassVault</p>
-    </div>
-    <img class="background" src="assets/img/passvault/background-gradient.png">
-    <video class="foreground" src="assets/video/passvault/passvault.mp4" muted controls></video>
-
-    <div class="logo">
-      <img class="passvault" id="passvault-main" src="assets/img/passvault/icon-backdrop.png">
-      <img class="passvault" id="passvault-cog" src="assets/img/passvault/icon-cog.png">
-    </div>
-    
-    
-    <p class="hyperlink">Read more about it <a href="https://www.github.com/Electr0d/PassVault">here</a>!</p>
-  </div>
-  
-  <div class="glance" id="glance-programming">
-    <div class="header-container">
-      <p class="header" id="bht">My Work at a Glance: Game Development</p>
-      <p class="sub-header">Bob's Haloween Tycoon</p>
-    </div>
-    <img class="background" src="assets/img/bht/bht-background.png">
-
-    <div class="logo">
-      <img class="bob" id="bob-saggat" src="assets/img/bht/bob-saggat.png">
-    </div>
-    
-    
-    <p class="hyperlink">Read more about it <a href="https://github.com/AOBUT-Game-Studios/BHT">here</a>!</p>
-  </div>
-  
-  <div class="glance" id="glance-design">
-    <div class="header-container">
-      <p class="header">My Work at a Glance: 3D Design</p>
-    </div>
-    
-    <img class="image" style="margin-top: 150px" src="assets/img/design/cam-1-off.jpg">
-    <img class="image" src="assets/img/design/road-scene.jpg">
-  </div>
-  
-  <div class="contact-me" id="contact-me">
-      <p class="header">Contact Me</p>
-      <a class="resume" href="https://drive.google.com/file/d/1Zd2FI2_fyfNYsBlQFWz6Fup_-EG6n07E/view?usp=sharing">My Resume</a>
-    <div class="socials">
-      <div class="social"><a href="https://www.github.com/Electr0d"><img class="icon" src="assets/img/icons/github.png"></a>GitHub</div>
-      <div class="social"><a href="https://www.linkedin.com/in/hamza-alsarakbi-006586b4/"><img class="icon" src="assets/img/icons/linkedin.png"></a>LinkedIn</div>
-    </div>
-  </div>
 
 
+
+  </div>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/animation.js"></script>
 </body>
-
 </html>

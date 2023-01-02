@@ -1,0 +1,72 @@
+@keyframes blink-cursor {
+  24% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+.draw-in {
+  animation: draw-in 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw-in {
+  from {
+    opacity: 0;
+    transform: translateX(-.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+h1#name.draw-in,
+p.indented.draw-in {
+  animation: p-draw-in 300ms ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes p-draw-in {
+  from {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0em);
+  }
+}
+
+.vertex.draw-in {
+  animation: vertex-draw-in 200ms ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes vertex-draw-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.vertex-edge.draw-in {
+  animation: vertex-edge-draw-in 200ms ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes vertex-edge-draw-in {
+  from {
+    opacity: 0;
+    transform: scaleY(0.5) translateY(-35%);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

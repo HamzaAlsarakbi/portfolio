@@ -1,0 +1,34 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  height: 3rem;
+  flex-flow: row-reverse;
+  position: fixed;
+  z-index: 98;
+}
+.navbar-item {
+  margin: 0 2rem;
+}
+.link-button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.link-button::after {
+  content: "";
+  margin-top: .33rem;
+  display: block;
+  width: 90%;
+  height: .3rem;
+  border-radius: 1rem;
+  background: var(--p-color);
+  filter: grayscale(.5);
+  transition: filter 200ms ease-in-out,
+  width 100ms ease-in-out;
+}
+.link-button:hover::after {
+  filter: grayscale(0);
+  width: 125%;
+}

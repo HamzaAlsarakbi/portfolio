@@ -1,0 +1,13 @@
+@media only screen and (max-width: 750px) {
+  .header {
+    flex-direction: column;
+  }
+  .slide#s2 {
+    background: url("../img/bg/portrait/s2.jpg");
+    background-position: center;
+  }
+  .slide#s3 {
+    background: url("../img/bg/portrait/s3.jpg");
+    background-position: center;
+  }
+}
