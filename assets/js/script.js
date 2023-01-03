@@ -40,7 +40,7 @@ let drawInElements = [
 ]
 
 function init() {
-  animate(document.querySelector('.animatable'), 'Hi I am,');
+  animate(document.querySelector('.animatable'), 'Hi I am,')
 
   document.onscroll = animateIfInView;
 

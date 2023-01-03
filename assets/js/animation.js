@@ -1,13 +1,20 @@
+/**
+ * Creates a realistic typing animation
+ * @param { HTMLElement } e element to be animated
+ * @param { String } text final text in the element
+ */
 function animate(e, text) {
   let subText = "";
   let curIndex = 0;
   let interval;
+  // Animate the characters being typed into the browser
   interval = setInterval(() => {
     if (curIndex < text.length) {
       subText += text.charAt(curIndex++);
       e.textContent = subText;
     } else {
       clearInterval(interval);
+      // Animate all the paragraphs
       setTimeout(() => {
         drawInElements.push(
           {
@@ -28,6 +35,11 @@ function animate(e, text) {
     }
   }, Math.max(Math.random() * 200, 100));
 }
+/**
+ * Checks if an element is in the viewport.
+ * @param { HTMLElement } element element to be checked
+ * @returns true if the element is in the viewport, false otherwise
+ */
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
