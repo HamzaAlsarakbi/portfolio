@@ -10,37 +10,39 @@ let drawInElements = [
     ]
   },
   {
-    time: 100,
+    time: 150,
     elements: [
       // Timeline 1
       document.querySelector(".vertex#timeline-1"),
       document.querySelector(".vertex-edge#timeline-1"),
       document.querySelector(".description#timeline-1"),
-      document.querySelector(".timeline-1#list-1"),
-      document.querySelector(".timeline-1#list-2"),
-      document.querySelector(".timeline-1#list-3"),
-      document.querySelector(".timeline-1#list-4"),
-      document.querySelector(".timeline-1#list-5"),
-      document.querySelector(".timeline-1#list-6"),
+      // document.querySelector(".timeline-1#list-1"),
+      // document.querySelector(".timeline-1#list-2"),
+      // document.querySelector(".timeline-1#list-3"),
+      // document.querySelector(".timeline-1#list-4"),
+      // document.querySelector(".timeline-1#list-5"),
+      // document.querySelector(".timeline-1#list-6"),
+
       // Timeline 2
       document.querySelector(".vertex#timeline-2"),
       document.querySelector(".vertex-edge#timeline-2"),
       document.querySelector(".description#timeline-2"),
-      document.querySelector(".timeline-2#list-1"),
-      document.querySelector(".timeline-2#list-2"),
-      document.querySelector(".timeline-2#list-3"),
+      // document.querySelector(".timeline-2#list-1"),
+      // document.querySelector(".timeline-2#list-2"),
+      // document.querySelector(".timeline-2#list-3"),
+      
       // Timeline 3
       document.querySelector(".vertex#timeline-3"),
       document.querySelector(".description#timeline-3"),
-      document.querySelector(".timeline-3#list-1"),
-      document.querySelector(".timeline-3#list-2"),
-      document.querySelector(".timeline-3#list-3"),
+      // document.querySelector(".timeline-3#list-1"),
+      // document.querySelector(".timeline-3#list-2"),
+      // document.querySelector(".timeline-3#list-3"),
     ]
   }
 ]
 
 function init() {
-  animate(document.querySelector('.animatable'), 'Hi I am,')
+  animate(document.querySelector('.animatable'), 'Hi, I am')
 
   document.onscroll = animateIfInView;
 

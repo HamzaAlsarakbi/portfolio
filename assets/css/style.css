@@ -28,7 +28,7 @@ p.pre-header::after {
   display: inline-block;
   content: "";
   height: 1em;
-  transform: translateY(8%);
+  transform: translate(.1em, 8%);
   width: 0.60em;
   background: var(--terminal-color);
   animation: blink-cursor 1s linear infinite;
@@ -55,4 +55,7 @@ h4 {
   margin-bottom: .5em;
   color: hsl(0, 0%, 90%);
   font-size: 1.2em;
+}
+.icon {
+  max-width: 10em;
 }
