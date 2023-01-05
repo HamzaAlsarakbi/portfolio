@@ -1,17 +1,13 @@
-.slides {
-  display: none;
-}
 .footer {
   min-height: 40vh;
   width: 100%;
   background-size: 100% 200%;
-  background: linear-gradient(0deg, hsl(234, 100%, 10%) 0%, black 100%);
+  background: linear-gradient(0deg, hsl(234, 0%, 00%) 00%, #1F050E 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
 }
-
 .links-collection {
   display: flex;
   flex-direction: row;
@@ -20,21 +16,25 @@
 
 .icon {
   margin: 1em;
-  --min-size: 10vw;
+  --min-size: 5vw;
   --max-size: 50vw;
   min-width: var(--min-size);
   min-height: var(--min-size);
   max-width: var(--max-size);
   max-height: var(--max-size);
-  width: 40%;
-  height: 40%;
   background-size: cover;
-  filter: brightness(2) saturate(2);
+  filter: brightness(.9);
+  transition: filter 200ms ease-in-out;
 }
 #github {
   background-image: url("../img/github.png");
 }
 #linkedin {
-  background-image: linear-gradient(to right, #BADA55, #BADA55), url("../img/linkedin.png");
-  background-blend-mode: overlay;
+  background-image: url("../img/linkedin.png");
+}
+#blog {
+  background-image: url("../img/blog.png");
+}
+.icon:hover {
+  filter: brightness(0.75);
 }

@@ -10,4 +10,8 @@
     background: url("../img/bg/portrait/s3.jpg");
     background-position: center;
   }
+  .footer {
+    background: linear-gradient(0deg, hsl(234, 0%, 00%) 00%, #09060D 100%);
+    background-position: center;
+  }
 }

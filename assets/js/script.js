@@ -30,7 +30,7 @@ let drawInElements = [
       // document.querySelector(".timeline-2#list-1"),
       // document.querySelector(".timeline-2#list-2"),
       // document.querySelector(".timeline-2#list-3"),
-      
+
       // Timeline 3
       document.querySelector(".vertex#timeline-3"),
       document.querySelector(".description#timeline-3"),
@@ -38,14 +38,22 @@ let drawInElements = [
       // document.querySelector(".timeline-3#list-2"),
       // document.querySelector(".timeline-3#list-3"),
     ]
+  },
+  {
+    time: 150,
+    elements: [
+      document.querySelector(".icon#github"),
+      document.querySelector(".icon#linkedin"),
+      document.querySelector(".icon#blog")
+    ]
   }
 ]
 
 function init() {
   animate(document.querySelector('.animatable'), 'Hi, I am')
-
+  
   document.onscroll = animateIfInView;
-
+  
   animateIfInView();
 }
 
@@ -56,7 +64,7 @@ function animateIfInView() {
       // remove elements collection
       delete drawInElements.elementsObj;
       let elements = elementsObj.elements;
-      console.log(elementsObj);
+      // console.log(elementsObj);
       // animate each child element
       for (let i = 0; i < elements.length; i++) {
         setTimeout(() => {
