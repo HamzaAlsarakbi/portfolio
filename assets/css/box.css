@@ -6,20 +6,23 @@
 }
 .box {
   display: block;
-  border: .1em solid rgba(128, 128, 128, 0.25);
+  border: .1em solid transparent;
+  border-top-color: rgba(128, 128, 128, 0.25);
   border-radius: 1em;
   margin: .5em;
   min-height: 10em;
-  backdrop-filter: blur(0.5em) brightness(0.6);
+  backdrop-filter: blur(4px) brightness(0.6);
   -webkit-backdrop-filter: blur(0.5em) brightness(0.6);
   padding: 1.5em;
   opacity: 0;
   min-width: 15em;
   max-width: 20em;
   width: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 .box-header {
   color: hsl(0, 0%, 90%);
+  margin: .25em 0 1em 0;
 }
 .box-body {
   color: hsl(0, 0%, 80%);
