@@ -10,7 +10,7 @@ let drawInElements = [
     ]
   },
   {
-    time: 150,
+    time: 200,
     elements: [
       // Timeline 1
       document.querySelector(".vertex#timeline-1"),
@@ -51,9 +51,9 @@ let drawInElements = [
 
 function init() {
   animate(document.querySelector('.animatable'), 'Hi, I am')
-  
+
   document.onscroll = animateIfInView;
-  
+
   animateIfInView();
 }
 

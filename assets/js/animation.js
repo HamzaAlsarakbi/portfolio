@@ -21,11 +21,7 @@ function animate(e, text) {
             time: 150,
             elements: [
               document.querySelector("h1#name"),
-              document.querySelector("p.indented#s1-p1"),
-              document.querySelector("p.indented#s1-p2"),
-              document.querySelector("p.indented#s1-p3"),
-              document.querySelector("p.indented#s1-p4"),
-              document.querySelector("p.indented#s1-p5"),
+              document.querySelector(".indented#s1"),
               document.querySelector("img.iconography#ball")
             ]
           }
