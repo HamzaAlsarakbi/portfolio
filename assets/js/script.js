@@ -44,7 +44,7 @@ let drawInElements = [
     elements: [
       document.querySelector(".icon#github"),
       document.querySelector(".icon#linkedin"),
-      document.querySelector(".icon#blog")
+      // document.querySelector(".icon#blog")
     ]
   }
 ]
