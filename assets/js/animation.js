@@ -22,7 +22,7 @@ function animate(e, text) {
             elements: [
               document.querySelector("h1#name"),
               document.querySelector(".indented#s1"),
-              document.querySelector("img.iconography#ball")
+              document.querySelector("img.avatar")
             ]
           }
         );

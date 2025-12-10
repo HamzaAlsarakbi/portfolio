@@ -33,10 +33,16 @@ let drawInElements = [
 
       // Timeline 3
       document.querySelector(".vertex#timeline-3"),
+      document.querySelector(".vertex-edge#timeline-3"),
       document.querySelector(".description#timeline-3"),
       // document.querySelector(".timeline-3#list-1"),
       // document.querySelector(".timeline-3#list-2"),
       // document.querySelector(".timeline-3#list-3"),
+
+      // Timeline 4
+      // Timeline 3
+      document.querySelector(".vertex#timeline-4"),
+      document.querySelector(".description#timeline-4"),
     ]
   },
   {
